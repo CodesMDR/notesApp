@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.container.hide {
+  display: none;
+}
+.container {
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
+  height: 600px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(39, 45, 53);
+  transition: 1.2s;
+}
+.container:hover {
+  transition: 1.2s;
+
+  box-shadow: rgba(0, 0, 0, 5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.addnote {
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.195);
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 19px;
+  font-weight: 600;
+  width: 100%;
+  background-color: rgb(2, 2, 2);
+  color: white;
+  transition: 0.9s;
+}
+.addnote:hover {
+  transition: 0.9s;
+  background-color: rgb(255, 251, 251);
+  color: black;
+  cursor: pointer;
+}
+.time {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.time h1 {
+  color: rgb(112, 230, 112);
+  font-weight: 200;
+  font-size: 60px;
+}
+
+.time p {
+  color: grey;
+  font-size: 15px;
+}
+.current {
+  border-bottom: 1px solid grey;
+  margin: 0px 60px 0px 60px;
+}
+.posted {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.posted p {
+  color: grey;
+  font-size: 13px;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.fa-delete-left {
+  position: absolute;
+  margin-right: 10px;
+  margin-top: 10px;
+  right: 0;
+  color: rgba(254, 254, 254, 0.23);
+  font-size: 20px;
+  z-index: 1;
+}
+.fa-delete-left:hover {
+  color: rgb(223, 19, 19);
+  cursor: pointer;
+}
+
+.note {
+  position: relative;
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 40px;
+  right: 0;
+  color: rgba(254, 254, 254, 0.23);
+  z-index: 1;
+}
+
+.fa-heart:hover {
+  color: #fc9e07;
+  cursor: pointer;
+}
+.note.hide {
+  display: none;
+}
+
+.modal.hide {
+  display: none;
+}
+.modal {
+  margin: auto;
+  margin-top: 200px;
+  background-color: rgb(39, 45, 53);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+.modal textarea {
+  background-color: rgb(39, 45, 53);
+  text-indent: 5px;
+  color: white;
+  outline: none;
+  width: 100%;
+  height: 80%;
+  border: none;
+}
+.modal button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(37, 175, 99);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.modal button:hover {
+  transition: 0.5s;
+  background-color: rgba(37, 175, 99, 0.734);
+  cursor: pointer;
+}
